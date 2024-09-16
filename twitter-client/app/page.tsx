@@ -46,7 +46,7 @@ export default function Home() {
           <div className="text-4xl h-fit w-fit hover:bg-gray-600 rounded-full p-4 cursor-pointer transition-all">
             <BsTwitter />
           </div>
-          <div className="mt-4 text-2xl font-semibold pr-4">
+          <div className="mt-4 text-2xl  pr-4">
             <ul>
               {sidebarMenuItems.map((item) => (
                 <li
@@ -58,9 +58,11 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <button className="bg-[#1d9bf0] mt-5 p-4 rounded-full w-full">
-              Tweet
-            </button>
+            <div className="mt-5 px-3">
+              <button className="text-lg font-semibold bg-[#1d9bf0] p-4 rounded-full w-full">
+                Tweet
+              </button>
+            </div>
           </div>
         </div>
         <div className="col-span-6 border-r-[1px] border-l-[1px] border-gray-400"></div>
